@@ -19,6 +19,8 @@
 #define NUM_WRITES 25000
 
 volatile int sharedCounter = 0;
+sem_t mutex;
+sem_t wrt;
 
 int main(int argc, char *argv[]) {
     // checking for the correct amount of arguments in input
